@@ -1,5 +1,6 @@
 import "./productComponent.css"
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 
 
@@ -13,7 +14,7 @@ const ProductComponent = () => {
       const {id, title, image, price, category} = product;  //destructuring the properties of each product being mapped, so that i can use "id", "title", "image" etc below (as opposed to "product.id", "product.title" etc).
         return (
            
-            
+          <Link to={`/product/${id}`}>
                 <div className="product" key={id} >
                     <img src={image} alt="" />
                       <div className="itemInfo">
@@ -22,7 +23,7 @@ const ProductComponent = () => {
                         <div className="productCategory">{category}</div>
                       </div>
                 </div>
-
+          </Link>
 
         )
     })
