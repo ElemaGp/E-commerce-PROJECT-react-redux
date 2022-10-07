@@ -17,3 +17,13 @@ export const allProductsReducer = (state = initialState, {type, payload}) => { /
             return state;
     }
 };
+
+export const selectedProductReducer = (state={}, {type, payload}) => { //i took the "state" as an argument and made it equal to an empty object. Then i destructured the "action" to get the "type" and "payload" from the "selectedProducts" action.
+    switch (type) {
+        case ActionTypes.SELECTED_PRODUCT:
+            return {...state, ...payload}; //i guess this means return the state with the payload inside it
+        
+        default:
+            return state;
+        }
+    };

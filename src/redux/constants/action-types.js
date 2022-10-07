@@ -1,6 +1,6 @@
 export const ActionTypes = {
     FETCH_PRODUCTS: "FETCH_PRODUCTS",  //the action type i'll use for for fetching all products 
-
+    SELECTED_PRODUCT: "SELECTED_PRODUCT", 
 };
 
 /*
