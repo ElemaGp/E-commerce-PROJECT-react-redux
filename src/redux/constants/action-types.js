@@ -1,6 +1,7 @@
 export const ActionTypes = {
     FETCH_PRODUCTS: "FETCH_PRODUCTS",  //the action type i'll use for for fetching all products 
-    SELECTED_PRODUCT: "SELECTED_PRODUCT", 
+    SELECTED_PRODUCT: "SELECTED_PRODUCT",
+    REMOVE_SELECTED_PRODUCT: "REMOVE_SELECTED_PRODUCT", //for unmouting the selected product when we leave the page
 };
 
 /*
