@@ -24,13 +24,18 @@ const ProductDetail = () => {
                 <div>...Loading</div>
             ) : (
                 <div className="productDetailsItems">
-                  <img src={image} alt="" />
-                  <div>
-                    {title}
-                    {price}
-                    {category}
-                    {description}
+                  <div className="image_container">
+                    <img src={image} alt="" />
                   </div>
+                    <div className="productDetailsRight">
+                        <div className="productDetailsTitle"> {title} </div>
+                        <div className="productDetailsPrice"> ${price} </div>
+                        <div className="productDetailsCategory"> {category} </div>
+                        <div className="productDetailsDescription"> {description} </div>
+                        
+                        
+                        
+                    </div>
                 </div>
             )}
           
