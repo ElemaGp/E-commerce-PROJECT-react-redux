@@ -19,16 +19,18 @@ const ProductDetail = () => {
         }, [productId]);
 
     return(
-        <div className="ui grid container">
+        <div className="productDetails">
             {Object.keys(selectedProduct).length === 0 ? (
                 <div>...Loading</div>
             ) : (
-                <div className="placeholder">
-                  {image}
-                  {title}
-                  {price}
-                  {category}
-                  {description}
+                <div className="productDetailsItems">
+                  <img src={image} alt="" />
+                  <div>
+                    {title}
+                    {price}
+                    {category}
+                    {description}
+                  </div>
                 </div>
             )}
           

@@ -9,16 +9,21 @@
     
 
 .product{
-    width: 18rem;
+    max-width: 18rem;
+    height: 25rem;
     cursor: pointer;
     border: solid 1px gray;
     border-radius: 7px;
 }
 
-.product > img {
+
+.product img {
     width: 15rem;
     height: 15rem;
     object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .itemInfo{
@@ -26,11 +31,13 @@
     flex-direction: column;
     align-items: center;
     margin-top: 4px;
-    
+    justify-content: space-around;
+    height: 9rem;
 }
+    
 
 .productTitle{
-    text-align: center;
+    max-width: 15rem;
     color: brown;
     font-size: large;
     font-weight: bold;
