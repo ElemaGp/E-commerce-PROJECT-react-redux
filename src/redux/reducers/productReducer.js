@@ -22,6 +22,9 @@ export const selectedProductReducer = (state={}, {type, payload}) => { //i took 
     switch (type) {
         case ActionTypes.SELECTED_PRODUCT:
             return {...state, ...payload}; //i guess this means return the state with the payload inside it
+
+        case ActionTypes.REMOVE_SELECTED_PRODUCT:
+                return {};
         
         default:
             return state;
